@@ -47,7 +47,7 @@ newScore.save();
 app.get("/", async function (req, res) {
   try {
     // Fetch top 10 scores, sorted by score in descending order
-    const topScores = await Score.find().sort({ score: -1 }).limit(213049758203948);
+    const topScores = await Score.find().sort({ score: -1 });
 
     // Render the index.ejs and pass the topScores
     res.render("index.ejs", { topScores });
