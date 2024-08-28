@@ -38,6 +38,12 @@ function moleSpawn() {
     hideAllMoles();
     let randomNum = Math.floor(Math.random() * 9);
     mole[randomNum].style.display = "flex";
+    mole[randomNum].style.width = '125px'
+    mole[randomNum].style.height = '125px'
+    setTimeout(function () {
+        mole[randomNum].style.width = '150px'
+        mole[randomNum].style.height = '150px'
+    }, 200)
 }
 
 function updateScore() {
