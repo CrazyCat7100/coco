@@ -35,13 +35,7 @@ const ScoreSchema = new Schema({
 
 const Score = mongoose.model("Score", ScoreSchema);
 
-// Add a sample score to the database (this can be removed after testing)
-const newScore = new Score({
-  username: "alex",
-  score: 50,
-});
 
-newScore.save();
 
 // Routes
 app.get("/", async function (req, res) {
