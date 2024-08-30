@@ -8,11 +8,14 @@ let closeLeaderboardButton = document.getElementsByClassName("close-leaderboard"
 let saveBtn = document.getElementsByClassName("savebtn")[0];
 let input = document.querySelector(".savescore input");
 let saveScorePopup = document.querySelector(".savescore");
+let playAgain = document.getElementsByClassName('playagain')[0]
 let score = 0;
 let timer = 30;
 let timerInterval;
 let timerStarted = false;
 let gameEnded = false;
+
+playAgain.style.display = 'none'
 
 if (localStorage.getItem('checkedIn?') === null) {
   localStorage.setItem('checkedIn?', false)
@@ -119,6 +122,7 @@ saveBtn.addEventListener("click", function () {
 function endGame() {
   gameEnded = true;
   hideAllMoles();
+  playAgain.style.display = 'flex'
   
   if (localStorage.getItem('checkedIn?') === 'false') {
     saveScorePopup.style.display = 'flex'

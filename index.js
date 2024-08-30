@@ -96,5 +96,5 @@ app.post("/score", async (req, res) => {
 
 // Start the server
 app.listen("3000", () => {
-  console.log("Server running at http://localhost:1000");
+  console.log("Server running at http://localhost:3000");
 });
