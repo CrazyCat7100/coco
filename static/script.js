@@ -116,7 +116,7 @@ saveBtn.addEventListener("click", function () {
           console.error("Error:", error);
 
       });
-      location.reload
+      location.reload()
 });
 
 function endGame() {
