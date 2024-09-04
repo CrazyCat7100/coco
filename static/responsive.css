@@ -25,8 +25,8 @@
     }
 
     img {
-        width: 17vw;
-        height: 17vw;
+        width: 55px;
+        height: 55px;
     }
 
     .mole {
@@ -56,6 +56,10 @@
     }
 
     .open-leaderboard {
-        
+         top: 52vh;
+    }
+
+    .leaderboard {
+        width: 80%;
     }
 }
