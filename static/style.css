@@ -201,13 +201,12 @@ img {
 }
 
 .savescore {
-  width: 500px;
-  height: 300px;
+  max-width: 500px;
+  width: 90%;
+  min-height: 300px;
   background-color: #1e90ff;
   border-radius: 30px;
   position: absolute;
-  top: calc(50% - 100px);
-  left: calc(50% - 150px);
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -218,7 +217,6 @@ img {
 .savescore h1 {
   font-size: 18px;
   text-align: center;
-  position: absolute;
   top: 20px;
 }
 
@@ -234,7 +232,7 @@ img {
 input {
   width: 80%;
   height: 35px;
-  margin-top: 140px;
+  margin-top: 20px;
   font-size: 30px;
 }
 
@@ -245,7 +243,7 @@ input {
   background-color: #1e90ff;
   font-size: 30px; 
   cursor: pointer;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
